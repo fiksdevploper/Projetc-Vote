@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./output.css" rel="stylesheet">
+    <!-- typography -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <!-- icon title browser -->
+    <link rel="icon" href="/image/logo title.png" type="image/icon" />
+    <!-- css boxicon -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Smk Amaliah 1&2 Ciawi</title>
+    <style>
+        .dropdown-content {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease-out;
+        }
+
+        .dropdown-content.show1 {
+            max-height: 500px;
+            overflow: auto;
+            /* Adjust as needed */
+        }
+
+        .dropdown-content.show2 {
+            max-height: 500px;
+            overflow: auto;
+            /* Adjust as needed */
+        }
+
+        input:checked+label svg {
+            transform: rotate(180deg);
+        }
+    </style>
+</head>
+
+<body class="bg-gray-200">
+    <div class="flex justify-center items-center min-h-screen">
+        <div class="min-h-screen max-w-5xl mx-auto place-content-center justify-center justify-items-center py-5 grid md:grid-cols-2 lg:grid-cols-2 gap-10">
+            <!-- card 1 -->
+            <div class="bg-white shadow-sm rounded-2xl overflow-hidden max-w-xs order-first lg:order-none">
+                <div class="rounded-lg p-8 md:p-8 w-full max-w-xs">
+                    <div class="flex flex-col items-center">
+                        <div class="flex mb-4">
+                            <img class="inline-block w-full h-auto rounded-lg object-cover transform transition duration-500 ease-in-out hover:scale-110 hover:shadow-lg"
+                                src="/image/paslon 1 (A1).png" alt="foto ketua osis">
+                        </div>
+                        <h2 class="text-lg md:text-xl font-semibold text-center font-montserrat">AVRIL & RAJA</h2>
+                        <hr class="w-[210px] h-0.4 bg-[#D7D7D7] rounded-md my-2.5">
+                        <p class="text-abu-200 font-medium font-poppins">XI PPLG 1 & X PPLG 2</p>
+                        <p class="text-hitam-200 font-semibold font-poppins text-2xl mt-3">01</p>
+                    </div>
+                    <div class="mt-4">
+                        <a href="end.html">
+                            <button onclick="vote()"
+                                class="font-montserrat font-semibold w-full h-[44px] bg-ijo-400 hover:bg-ijo-360 transition duration-200 ease-in-out active:bg-ijo-200 focus:outline-none focus:ring focus:ring-ijomuda text-white py-2 rounded-full">
+                                Vote Calon Ketua OSIS
+                            </button>
+                        </a>
+                    </div>
+
+                    <div class="mt-4">
+                        <!-- button -->
+                        <input type="checkbox" id="toggle1" class="hidden">
+                        <label for="toggle1" onclick="toggleSection('lihat-visi-misi1')"
+                            class="w-full text-center font-montserrat font-medium text-black hover:underline flex items-center justify-center cursor-pointer">
+                            Lihat visi misi mereka
+                            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24"
+                                class="ml-1 transition-transform duration-300 transform">
+                                style="fill: #222222;transform: msFilter;">
+                                <path d="m6.293 13.293 1.414 1.414L12 10.414l4.293 4.293 1.414-1.414L12 7.586z"></path>
+                            </svg> 
+                        </label>
+                        <!-- button end -->
+
+                        <div id="lihat-visi-misi1" class="dropdown-content mt-2 text-gray-800">
+                            <!-- Bagian Visi -->
+                            <div class="mt-[10px]">
+                                <h1 class="text-[22px] font-montserrat font-semibold text-black">Visi</h1>
+                                <p class="mt-[6px] text-abu-200 font-poppins text-base">MENJADIKAN PERAN DAN FUNGSI OSIS
+                                    SEBAGAI TEMPAT MENGEMBANGKAN POTENSI SISWA/I SMK AMALIAH SEHINGGA TERCIPTANYA
+                                    SISWAZI YANG BAIK DI SIPLIN, CERDAS, KREATIF DAN INOVATIF SERTA TETAP BERPEGANG
+                                    TEGUH KEPADA AKHLAKUL KHARIMAH</p>
+                            </div>
+
+                            <!-- Bagian Misi -->
+                            <div class="mt-[10px]"> <!-- Margin atas 10px / 1.0rem -->
+                                <h1 class="text-[22px] font-montserrat font-semibold text-black">Misi</h1>
+                                <ol class="list-decimal pl-8 mt-[6px] text-abu-200 font-poppins text-base">
+                                    <li>MENGUTAMAKAN KEIMANAN DAN KETAQWAAN KEPADA TUHAN YANG MAHA ESA DAN BERPEGANG
+                                        TEGUH PADA AKHLAKUL KHARIMAH SEBAGAI LANDASAN DALAM MELAKSANAKAN SELURUH
+                                        KEGIATAN.</li>
+                                    <li>MENCIPTAKAN LINGKUNGAN SEKOLAH YANG BERKARAKTER DAN MENJADI OSIS SEBAGAI
+                                        ORGANISASI YANG MENGUTAMAKAN ETIKA BAIK DAN TIDAK LUPAKAN MENERAPKAN 5S SESAMA
+                                        SISWA MAUPUN GURU.</li>
+                                    <li>MENDISPLINKAN SISWA/I SMK AMALIAH AGAR MENAATI PERATURAN.</li>
+                                    <li>MENJADI PENGURUS OSIS YANG AMANAH, BERTANGGUNG JAWAB SERTA SALING MERANGKUL SATU
+                                        SAMA LAIN.</li>
+                                    <li>MENCIPTAKAN IDE IDE BARU YANG DAPAT MENARIK PERHATIAN SISWA/I SMK AMALIAH JUGA
+                                        DAPAT MENJADI TEMPAT KESEMPATAN SISWA/I UNTUK MENUNJUKKAN BAKAT DAN MINATNYA.
+                                    </li>
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- card 2 -->
+            <div class="bg-white shadow-sm rounded-2xl overflow-hidden max-w-xs order-first lg:order-none">
+                <div class="rounded-lg p-8 md:p-8 w-full max-w-xs">
+                    <div class="flex flex-col items-center">
+                        <div class="flex mb-4">
+                            <img class="inline-block w-full h-auto rounded-lg object-cover transform transition duration-500 ease-in-out hover:scale-110 hover:shadow-lg"
+                                src="/image/paslon 2 (A1).png" alt="foto ketua osis">
+                        </div>
+                        <h2 class="text-lg md:text-xl font-semibold text-center font-montserrat">MIKAYLA & SAQILA</h2>
+                        <hr class="w-[210px] h-0.4 bg-[#D7D7D7] rounded-md my-2.5">
+                        <p class="text-abu-200 font-medium font-poppins">XI TJKT 2 & X PPLG 1</p>
+                        <p class="text-hitam-200 font-semibold font-poppins text-2xl mt-3">02</p>
+                    </div>
+
+                    <div class="mt-4">
+                        <a href="end.html">
+                            <button onclick="vote()"
+                                class="font-montserrat font-semibold w-full h-[44px] bg-ijo-400 hover:bg-ijo-360 transition duration-200 ease-in-out active:bg-ijo-200 focus:outline-none focus:ring focus:ring-ijomuda text-white py-2 rounded-full">Vote
+                                Calon Ketua OSIS
+                            </button>
+                        </a>
+                    </div>
+
+                    <div class="mt-4">
+                        <!-- button -->
+                        <input type="checkbox" id="toggle2" class="hidden">
+                        <label for="toggle2" onclick="toggleSection('lihat-visi-misi2')"
+                            class="w-full text-center font-montserrat font-medium text-black hover:underline flex items-center justify-center cursor-pointer">
+                            Lihat visi misi mereka
+                            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24"
+                                class="ml-1 transition-transform duration-300 transform">
+                                style="fill: #222222;transform: msFilter;">
+                                <path d="m6.293 13.293 1.414 1.414L12 10.414l4.293 4.293 1.414-1.414L12 7.586z"></path>
+                            </svg>
+                        </label>
+                        <!-- button end -->
+
+                        <div id="lihat-visi-misi2" class="dropdown-content mt-2 text-gray-800">
+                            <!-- Bagian Visi -->
+                            <div class="mt-[10px]">
+                                <h1 class="text-[22px] font-montserrat font-semibold text-black">Visi</h1>
+                                <p class="mt-[6px] text-abu-200 font-poppins text-base">MENJADIKAN OSIS SMK AMALIAH 1
+                                    CIAWI YANG MEMILIKI KARAKTER AKHLAKUL KHARIMAH, BERWAWASAN GLOBAL, KREATIF, DAN
+                                    INOVATIF, JUGA MENGEDEPANKAN INTEGRITAS AGAR MENCIPTAKAN GENERASI MUDA YANG UNGGUL
+                                    SERTA BERPRESTASI DALAM BERBAGAI BIDANG.</p>
+                            </div>
+
+                            <!-- Bagian Misi -->
+                            <div class="mt-[10px]"> <!-- Margin atas 10px / 1.0rem -->
+                                <h1 class="text-[22px] font-montserrat font-semibold text-black">Misi</h1>
+                                <ol class="list-decimal pl-8 mt-[6px] text-abu-200 font-poppins text-base">
+                                    <li>MENGUTAMAKAN KETUHANAN YME DARI SEGALA ASPEK</li>
+                                    <li>MENGEMBANGKAN AKULTURASI INTEGRITAS
+                                    </li>
+                                    <li> MENJALANKAN PROGRAM KERJA DENGAN NYATA DAN PENUH TANGGUNG JAWAB
+                                    </li>
+                                    <li>MENJADIKAN OSIS SEBAGAI SARANA ASPIRASI SISWA
+                                    </li>
+                                    <li> MENJADIKAN OSIS SEBAGAI SARANA DALAM MENGEMBANGKAN POTENSI DAN BAKAT YANG/DIMILIKI/SISWA</li>
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="vote.js"></script>
+
+</html>
