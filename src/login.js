@@ -1,5 +1,5 @@
 // runing text
-const phrases = ["Mau Login?", "Scrol Ke Bawah ya👇", "Terima Kasih👍"];
+const phrases = ["Kamu Mau Login?", "Scrol Ke Bawah ya👇", "Terima Kasih👍"];
 // scrip untuk menentukan kecepatan animasi runing text
 let phraseIndex = 0;
 let charIndex = 0;
