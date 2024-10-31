@@ -2,7 +2,7 @@
 const phrases = [
   "Assalamualaikum🖐️",
   "Selamat Datang😊",
-  "Jangan lupa vote ya👌",
+  "Jangan Golput ya🏳️",
   "Terima Kasih👋",
 ];
 // scrip untuk menentukan kecepatan animasi runing text
